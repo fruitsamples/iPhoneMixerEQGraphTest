@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180E66C611D5033600E800D1 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 180E66BF11D5033600E800D1 /* Icon-72.png */; };
+		180E66C711D5033600E800D1 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 180E66C011D5033600E800D1 /* Icon-Small-50.png */; };
+		180E66C811D5033600E800D1 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 180E66C111D5033600E800D1 /* Icon-Small.png */; };
+		180E66C911D5033600E800D1 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 180E66C211D5033600E800D1 /* Icon-Small@2x.png */; };
+		180E66CA11D5033600E800D1 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 180E66C311D5033600E800D1 /* Icon.png */; };
+		180E66CB11D5033600E800D1 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 180E66C411D5033600E800D1 /* Icon@2x.png */; };
+		180E66CC11D5033600E800D1 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 180E66C511D5033600E800D1 /* iTunesArtwork */; };
+		185ABC3111CBCAED003FD6E3 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185ABC2F11CBCAED003FD6E3 /* MainWindow.xib */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		2B0208D5111FCBB6002BB86D /* CAComponentDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B0208D4111FCBB6002BB86D /* CAComponentDescription.cpp */; };
 		2B1D98D51123637700E1AB0A /* moof.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D98D41123637600E1AB0A /* moof.png */; };
 		2B222C2C1120F73E002716C2 /* AUGraphController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2B222C291120F73E002716C2 /* AUGraphController.mm */; };
@@ -25,14 +32,20 @@
 		2BE30B230F59F67E00D63998 /* info.html in Resources */ = {isa = PBXBuildFile; fileRef = 2BE30B1F0F59F67E00D63998 /* info.html */; };
 		2BF8389A1047021B000A5DCC /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BF838981047021B000A5DCC /* CAXException.cpp */; };
 		2BFBE19D0F5C9B30003ECC4F /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFBE19B0F5C9B30003ECC4F /* MyViewController.m */; };
-		2BFBE1AC0F5C9C54003ECC4F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BFBE1AB0F5C9C54003ECC4F /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		180E66BF11D5033600E800D1 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "images/Icon-72.png"; sourceTree = "<group>"; };
+		180E66C011D5033600E800D1 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "images/Icon-Small-50.png"; sourceTree = "<group>"; };
+		180E66C111D5033600E800D1 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "images/Icon-Small.png"; sourceTree = "<group>"; };
+		180E66C211D5033600E800D1 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "images/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		180E66C311D5033600E800D1 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = images/Icon.png; sourceTree = "<group>"; };
+		180E66C411D5033600E800D1 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "images/Icon@2x.png"; sourceTree = "<group>"; };
+		180E66C511D5033600E800D1 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = images/iTunesArtwork; sourceTree = "<group>"; };
+		185ABC3011CBCAED003FD6E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* MixEQGraphTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixEQGraphTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2B0208D3111FCBB1002BB86D /* CAComponentDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAComponentDescription.h; sourceTree = "<group>"; };
 		2B0208D4111FCBB6002BB86D /* CAComponentDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAComponentDescription.cpp; sourceTree = "<group>"; };
@@ -58,7 +71,6 @@
 		2BFBE19B0F5C9B30003ECC4F /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		2BFBE19C0F5C9B30003ECC4F /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		2BFBE1A00F5C9C30003ECC4F /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
-		2BFBE1AB0F5C9C54003ECC4F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,9 +137,15 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				180E66BF11D5033600E800D1 /* Icon-72.png */,
+				180E66C011D5033600E800D1 /* Icon-Small-50.png */,
+				180E66C111D5033600E800D1 /* Icon-Small.png */,
+				180E66C211D5033600E800D1 /* Icon-Small@2x.png */,
+				180E66C311D5033600E800D1 /* Icon.png */,
+				180E66C411D5033600E800D1 /* Icon@2x.png */,
+				180E66C511D5033600E800D1 /* iTunesArtwork */,
+				185ABC2F11CBCAED003FD6E3 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
-				2BFBE1AB0F5C9C54003ECC4F /* Icon.png */,
 				2B1D98D41123637600E1AB0A /* moof.png */,
 				2BE30B1C0F59F67E00D63998 /* green_button.png */,
 				2BE30B1D0F59F67E00D63998 /* red_button.png */,
@@ -192,6 +210,13 @@
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iPhoneMixerEQGraphTest" */;
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -206,14 +231,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2BE30B200F59F67E00D63998 /* green_button.png in Resources */,
 				2BE30B210F59F67E00D63998 /* red_button.png in Resources */,
 				2BE30B230F59F67E00D63998 /* info.html in Resources */,
-				2BFBE1AC0F5C9C54003ECC4F /* Icon.png in Resources */,
 				2B9A681111179D890050C8C6 /* Track1.mp4 in Resources */,
 				2B9A681211179D890050C8C6 /* Track2.mp4 in Resources */,
 				2B1D98D51123637700E1AB0A /* moof.png in Resources */,
+				185ABC3111CBCAED003FD6E3 /* MainWindow.xib in Resources */,
+				180E66C611D5033600E800D1 /* Icon-72.png in Resources */,
+				180E66C711D5033600E800D1 /* Icon-Small-50.png in Resources */,
+				180E66C811D5033600E800D1 /* Icon-Small.png in Resources */,
+				180E66C911D5033600E800D1 /* Icon-Small@2x.png in Resources */,
+				180E66CA11D5033600E800D1 /* Icon.png in Resources */,
+				180E66CB11D5033600E800D1 /* Icon@2x.png in Resources */,
+				180E66CC11D5033600E800D1 /* iTunesArtwork in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +267,17 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		185ABC2F11CBCAED003FD6E3 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				185ABC3011CBCAED003FD6E3 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -248,6 +290,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iPhoneMixerEQGraphTest_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PRODUCT_NAME = MixEQGraphTest;
 			};
 			name = Debug;
@@ -261,6 +304,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iPhoneMixerEQGraphTest_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PRODUCT_NAME = MixEQGraphTest;
 			};
 			name = Release;
@@ -273,10 +317,11 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos3.1.3;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Debug;
 		};
@@ -288,8 +333,9 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.3;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Release;
 		};

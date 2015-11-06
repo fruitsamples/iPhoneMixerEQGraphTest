@@ -1,7 +1,7 @@
 /*
     File: MyViewController.h
 Abstract: The main view controller.
- Version: 1.0
+ Version: 1.2
 
 Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple
 Inc. ("Apple") in consideration of your agreement to the following
@@ -52,10 +52,10 @@ Copyright (C) 2010 Apple Inc. All Rights Reserved.
 
 @interface MyViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 {
-	IBOutlet UIView		*instructionsView;
-    IBOutlet UIView		*eqView;
-    IBOutlet UIWebView 	*webView;
-    IBOutlet UIView		*contentView;
+	UIView		*instructionsView;
+    UIView		*eqView;
+    UIWebView 	*webView;
+    UIView		*contentView;
     
     UIBarButtonItem 	*infoButtonItem;
     UIBarButtonItem 	*eqButtonItem;
@@ -63,16 +63,16 @@ Copyright (C) 2010 Apple Inc. All Rights Reserved.
     
     IBOutlet UIButton 	*startButton;
     
-    IBOutlet UISwitch   *bus0Switch;
-    IBOutlet UISlider   *bus0VolumeSlider;
-    IBOutlet UISwitch   *bus1Switch;
-    IBOutlet UISlider   *bus1VolumeSlider;
-    IBOutlet UISlider   *outputVolumeSlider;
-    IBOutlet UISwitch   *eqSwitch;
+    UISwitch   *bus0Switch;
+    UISlider   *bus0VolumeSlider;
+    UISwitch   *bus1Switch;
+    UISlider   *bus1VolumeSlider;
+    UISlider   *outputVolumeSlider;
+    UISwitch   *eqSwitch;
     
-    UInt8               selectedEQPresetIndex;
+    UInt8      selectedEQPresetIndex;
    
-    IBOutlet AUGraphController *graphController;
+    AUGraphController *graphController;
 }
 
 @property (readonly, nonatomic) IBOutlet UIView    *instructionsView;
@@ -93,7 +93,7 @@ Copyright (C) 2010 Apple Inc. All Rights Reserved.
 @property (readonly, nonatomic) IBOutlet UISlider *outputVolumeSlider;
 @property (readonly, nonatomic) IBOutlet UISwitch *eqSwitch;
 
-@property (readonly, nonatomic) AUGraphController *graphController;
+@property (readonly, nonatomic) IBOutlet AUGraphController *graphController;
 
 - (void)setUIDefaults;
 - (void)stopForInterruption;

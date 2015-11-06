@@ -42,13 +42,12 @@ None
 ===========================================================================
 BUILD REQUIREMENTS:
 
-Mac OS X v10.6.2, Xcode 3.2.1, iPhone OS 3.1.3
+iOS 4.0 SDK
 
 ===========================================================================
 RUNTIME REQUIREMENTS:
 
-Simulator: Mac OS X v10.6.2
-iPhone: iPhone OS 3.1.3
+iPHone OS 3.2 or later
 
 
 ===========================================================================
@@ -74,7 +73,9 @@ This file implements setting up the AUGraph, loading up the audio data using Ext
 ===========================================================================
 CHANGES FROM PREVIOUS VERSIONS:
 
-Version 1.0, tested with iPhone OS 3.1.3. First public release.
+Version 1.2, Changed deployment target back to iPhone OS 3.2 and added CFBundleIconFiles in Info.plist.
+Version 1.1, Upgraded project to build with the iOS 4 SDK.
+Version 1.0, Tested with iPhone OS 3.1.3. First public release.
 
 
 ===========================================================================

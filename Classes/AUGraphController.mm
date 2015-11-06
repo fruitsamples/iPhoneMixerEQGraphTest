@@ -1,7 +1,7 @@
 /*
     File: AUGraphController.mm
-Abstract: The Controller Class for the AUGraph.
- Version: 1.0
+Abstract: Sets up the AUGraph, loading up the audio data using ExtAudioFile, the input render procedure and so on.
+ Version: 1.2
 
 Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple
 Inc. ("Apple") in consideration of your agreement to the following
@@ -64,32 +64,33 @@ static OSStatus renderInput(void *inRefCon, AudioUnitRenderActionFlags *ioAction
 {
     SourceAudioBufferDataPtr userData = (SourceAudioBufferDataPtr)inRefCon;
     
-	AudioSampleType *in = userData->soundBuffer[inBusNumber].data;
-	AudioSampleType *out = (AudioSampleType *)ioData->mBuffers[0].mData;
+    AudioSampleType *in = userData->soundBuffer[inBusNumber].data;
+    AudioSampleType *out = (AudioSampleType *)ioData->mBuffers[0].mData;
     
-    UInt32 numFramesToRender = inNumberFrames;
+    UInt32 sample = userData->frameNum * userData->soundBuffer[inBusNumber].asbd.mChannelsPerFrame;
     
     // make sure we don't attempt to render more data than we have available in the source buffers
-    // if one buffer is larger than the other, just render silence for that bus untill we loop around again
-    if ((userData->frameNum + numFramesToRender) > userData->soundBuffer[inBusNumber].numFrames) {
-        UInt32 offset = (userData->frameNum + numFramesToRender) - userData->soundBuffer[inBusNumber].numFrames;
-        if (offset < numFramesToRender) {
-            numFramesToRender -= offset;
-            ioData->mBuffers[0].mDataByteSize = numFramesToRender * userData->soundBuffer[inBusNumber].asbd.mBytesPerFrame;
+    // if one buffer is larger than the other, just render silence for that bus until we loop around again
+    if ((userData->frameNum + inNumberFrames) > userData->soundBuffer[inBusNumber].numFrames) {
+        UInt32 offset = (userData->frameNum + inNumberFrames) - userData->soundBuffer[inBusNumber].numFrames;
+        if (offset < inNumberFrames) {
+            // copy the last bit of source
+            SilenceData(ioData);
+            memcpy(out, &in[sample], ((inNumberFrames - offset) * userData->soundBuffer[inBusNumber].asbd.mBytesPerFrame));
+            return noErr;
         } else {
+            // got no source data
             SilenceData(ioData);
             *ioActionFlags |= kAudioUnitRenderAction_OutputIsSilence;
             return noErr;
         }
     }
-    
-    UInt32 sample = userData->frameNum * userData->soundBuffer[inBusNumber].asbd.mChannelsPerFrame;
-    
+	
     memcpy(out, &in[sample], ioData->mBuffers[0].mDataByteSize);
     
     //printf("render input bus %ld sample %ld\n", inBusNumber, sample);
     
-	return noErr;
+    return noErr;
 }
 
 // the render notification is used to keep track of the frame number position in the source audio

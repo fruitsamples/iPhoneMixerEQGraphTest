@@ -1,7 +1,7 @@
 /*
     File: MyViewController.m 
 Abstract: The main view controller. 
- Version: 1.0 
+ Version: 1.2 
  
 Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple 
 Inc. ("Apple") in consideration of your agreement to the following 
